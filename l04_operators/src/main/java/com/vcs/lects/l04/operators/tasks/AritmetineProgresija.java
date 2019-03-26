@@ -11,5 +11,14 @@ public class AritmetineProgresija {
 	 * </pre>
 	 * 
 	 */
+	
+	public double formule(double a, double d, double n) {
+		
+		return ((2 * a + d * (n-1)) / 2) * n;
+		
+	}
+	
+	
+	
 
 }
