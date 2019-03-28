@@ -1,12 +1,16 @@
 package com.vcs.lects.l08.oop.vehicle;
 
-public class Audi extends Automobilis {
+import com.vcs.lects.l08.oop.vehicle.engines.E95;
+import com.vcs.lects.l08.oop.vehicle.komplektacija.Radio;
 
-	private AudiVariklis variklis;
+public class Audi extends Automobilis implements Radio {
 
 	public Audi(AudiVariklis v) {
+		super(new E95());
 		variklis = v;
 	}
+
+	private AudiVariklis variklis;
 
 	@Override
 	public double iveiktasKelias(int h) {
