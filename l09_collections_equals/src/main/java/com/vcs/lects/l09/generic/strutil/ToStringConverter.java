@@ -1,8 +1,8 @@
 package com.vcs.lects.l09.generic.strutil;
 
-public class ToStringConverter {
+public class ToStringConverter<E> {
 
-	public String convertToString(Object obj) {
+	public String convertToString(E obj) {
 		return obj.toString();
 	}
 
