@@ -27,8 +27,8 @@ public class MainLiamda {
 
 		Geometries gl = (dddd) -> "linija" + dddd;
 
-// Metodo implementacija kaip parametras
-		spausdink((a) -> "linija" + a, 15);
+		// Metodo implementacija kaip parametras
+		spausdink((a) -> {a+= 6; return "linija" + a;}, 15);
 
 	}
 

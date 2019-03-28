@@ -1,0 +1,22 @@
+package com.vcs.lects.l09.generics;
+
+import com.vcs.lects.l09.generics.engines.Variklis;
+
+public abstract class Automobilis<V extends Variklis> extends ToStringImpl  {
+
+	private V variklis;
+
+	public Automobilis(V variklis) {
+		this.variklis = variklis;
+	}
+
+	public V getVariklis() {
+		return variklis;
+	}
+
+	@Override
+	public double iveiktasKelias(int h) {
+		return 90.0 * h;
+	}
+
+}
