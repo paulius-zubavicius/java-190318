@@ -1,4 +1,4 @@
-package com.vcs.lects.l09.generics.engines;
+package com.vcs.lects.l09.generics.vehicle.engines;
 
 public class TDI implements VidausDegimo {
 

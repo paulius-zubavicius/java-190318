@@ -1,7 +1,7 @@
-package com.vcs.lects.l09.generics;
+package com.vcs.lects.l09.generics.vehicle;
 
-import com.vcs.lects.l09.generics.engines.E95;
-import com.vcs.lects.l09.generics.engines.Ev;
+import com.vcs.lects.l09.generics.vehicle.engines.E95;
+import com.vcs.lects.l09.generics.vehicle.engines.Ev;
 
 public class RealWorld {
 

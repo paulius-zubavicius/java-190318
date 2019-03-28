@@ -1,6 +1,6 @@
-package com.vcs.lects.l09.generics;
+package com.vcs.lects.l09.generics.vehicle;
 
-import com.vcs.lects.l09.generics.engines.Variklis;
+import com.vcs.lects.l09.generics.vehicle.engines.Variklis;
 
 public abstract class Automobilis<V extends Variklis> extends ToStringImpl  {
 

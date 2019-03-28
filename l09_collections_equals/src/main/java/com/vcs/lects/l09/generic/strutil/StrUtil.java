@@ -1,4 +1,4 @@
-package com.vcs.lects.l09.collections;
+package com.vcs.lects.l09.generic.strutil;
 
 import java.util.Arrays;
 
