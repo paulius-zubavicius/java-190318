@@ -29,7 +29,7 @@ public class App {
 		 */
 
 		RoboLib v = new RoboLib();
-		v.setRoboEventHandlerProvider();
+		v.setRoboEventHandlerProvider(null);
 		v.init();
 	}
 }
