@@ -1,4 +1,4 @@
-package com.vcs.lects.l10.tree;
+package com.vcs.lects.l10.tree.factorial;
 
 public class Factorial {
 
