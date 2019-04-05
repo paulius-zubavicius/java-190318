@@ -1,0 +1,32 @@
+{
+	"isSomethingMissing": false,
+	"stringArr": [
+		"Tekstas",
+		"Text",
+		"TXT"
+	],
+	"sk": 2147483647,
+	"strings": [
+		"str",
+		"sdfdsf",
+		"asdsad"
+	],
+	"langsMap": {
+		"en": "English",
+		"lt": "Lietuvių"
+	},
+	"persons": {
+		"00002": {
+			"name": "Petras",
+			"age": 333
+		},
+		"00005": {
+			"name": "Mano pridetas vardas",
+			"age": -1
+		},
+		"00001": {
+			"name": "vardsas",
+			"age": 212
+		}
+	}
+}
