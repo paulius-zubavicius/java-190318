@@ -34,7 +34,7 @@ public class PersonToDBWithJPA {
 
 		Random rnd = new Random();
 
-		int rndBound = rnd.nextInt(10);
+		int rndBound = rnd.nextInt(1000);
 
 		Person p = null;
 		for (int i = 0; i < rndBound; i++) {
