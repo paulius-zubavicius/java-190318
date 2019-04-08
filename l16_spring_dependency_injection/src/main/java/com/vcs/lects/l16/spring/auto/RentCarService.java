@@ -16,7 +16,7 @@ public class RentCarService {
 //	@Autowired
 //	private boolean continent;
 	
-	@Value("${continent}")
+	@Value("${continent:eu}")
 	private String continent;
 
 	public Car getInstance() {
@@ -26,7 +26,6 @@ public class RentCarService {
 		}
 
 		return fr;
-
 	}
 
 }

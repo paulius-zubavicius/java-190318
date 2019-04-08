@@ -1,6 +1,5 @@
 package com.vcs.lects.l16.spring.auto;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
