@@ -7,7 +7,7 @@ public class KaroliukaiImpl {
 
 	public char[][] rotateClockwise(char[][] data, char emptyChar, int rotateCount) {
 
-		for (int c = 0; c < rotateCount; c++) {
+		for (int i = 0; i < rotateCount; i++) {
 			doGravity(data);
 			data = rotateOneTime(data);
 		}
@@ -55,12 +55,10 @@ public class KaroliukaiImpl {
 			if (rowArr[i] == EMPTY) {
 				gapToFall++;
 			} else {
-				return gapToFall;
+				break;
 			}
-
 		}
-
-		return 0;
+		return gapToFall;
 	}
 
 	private void letItFall(char[][] data, int row, int gapToFall) {
