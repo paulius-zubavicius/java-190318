@@ -1,6 +1,8 @@
 package l06_arrays_cycles;
 
 import com.vcs.lects.l06.arrays_cycles.tasks.Karoliukai;
+import com.vcs.lects.l06.arrays_cycles.tasks.KaroliukaiImpl;
+import com.vcs.lects.l06.arrays_cycles.tasks.KaroliukaiKasparas;
 
 public class KaroliukaiTest {
 
@@ -43,7 +45,7 @@ public class KaroliukaiTest {
 				{ '0', '0', '0', '0', '0' } 
 				};
 
-		Karoliukai k = new Karoliukai();
+		KaroliukaiKasparas k = new KaroliukaiKasparas();
 
 		System.out.println(check(a2, k.rotateClockwise(a1, EMPTY, 47)) ? "Ok" : "fail");
 		System.out.println(check(b2, k.rotateClockwise(b1, EMPTY, 4)) ? "Ok" : "fail");
