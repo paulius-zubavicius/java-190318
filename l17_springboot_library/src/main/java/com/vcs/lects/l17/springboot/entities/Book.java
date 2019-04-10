@@ -26,6 +26,20 @@ public class Book {
 	@PositiveOrZero
 	private int count;
 
+	public Book() {
+
+	}
+
+	public Book(Long id, @NotBlank String codeISBN, @NotBlank String name, @NotBlank String author,
+			@PositiveOrZero int count) {
+		super();
+		this.id = id;
+		this.codeISBN = codeISBN;
+		this.name = name;
+		this.author = author;
+		this.count = count;
+	}
+
 	public Long getId() {
 		return id;
 	}

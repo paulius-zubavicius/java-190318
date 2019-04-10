@@ -21,7 +21,7 @@ public interface BookRepository extends CrudRepository<Book, Long> {
 	// SELECT * FROM book WHERE author = '???'
 //	List<Book> findByAuthor(String author);
 	
-	@Query("SELECT b FROM Book b WHERE (b.count > 0 OR :onlyAvailable = TRUE)"
+	@Query("SELECT b FROM Book b WHERE (b.count > 0 OR :onlyAvailable = FALSE)"
 			+ " AND (UPPER(b.name) LIKE UPPER(CONCAT('%',:searchText,'%'))"
 			+ " OR UPPER(b.author) LIKE UPPER(CONCAT('%',:searchText,'%'))"
 			+ " OR UPPER(b.codeISBN) LIKE UPPER(CONCAT('%',:searchText,'%')))")
