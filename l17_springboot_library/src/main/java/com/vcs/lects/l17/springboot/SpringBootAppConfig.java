@@ -28,7 +28,7 @@ public class SpringBootAppConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/*").permitAll().antMatchers("/admin/**").hasIpAddress("127.0.0.1")
-				.anyRequest().authenticated().and().formLogin().permitAll().and().csrf().disable();
+				.anyRequest().permitAll().and().csrf().disable();
 	}
 
 }
