@@ -1,17 +1,15 @@
 package l06_arrays_cycles;
 
-import com.vcs.lects.l06.arrays_cycles.tasks.Karoliukai;
-import com.vcs.lects.l06.arrays_cycles.tasks.KaroliukaiImpl;
-import com.vcs.lects.l06.arrays_cycles.tasks.KaroliukaiKasparas;
+import com.vcs.lects.l06.arrays_cycles.tasks.KaroliukaiTunedImpl;
 
 public class KaroliukaiTest {
 
 	private static final char EMPTY = ' ';
 	
 	public static void main(String[] s) {
+	
+		KaroliukaiTunedImpl k = new KaroliukaiTunedImpl();
 		
-
-
 		char[][] a1 = { 
 				{ EMPTY, 'X', 'X', EMPTY }, 
 				{ EMPTY, EMPTY, 'A', EMPTY }, 
@@ -44,14 +42,13 @@ public class KaroliukaiTest {
 				{ '0', EMPTY, EMPTY, '0', '0' }, 
 				{ '0', '0', '0', '0', '0' } 
 				};
-
-		KaroliukaiImpl k = new KaroliukaiImpl();
-
+		
 		System.out.println(check(a2, k.rotateClockwise(a1, EMPTY, 47)) ? "Ok" : "fail");
 		System.out.println(check(b2, k.rotateClockwise(b1, EMPTY, 4)) ? "Ok" : "fail");
 		System.out.println(check(c2, k.rotateClockwise(c1, EMPTY, 1)) ? "Ok" : "fail");
-
 	}
+	
+	
 
 	private static boolean check(char[][] c1, char[][] c2) {
 
